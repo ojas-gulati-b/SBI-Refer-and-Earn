@@ -708,7 +708,8 @@
             document.querySelector('#re_fullcomparebox').classList.remove('re_fullcomparebox_scroll');
             $('.re_close_full_compare').hide();
         }
-        $(document).ready(function () {
+        //$(document).ready(function () {
+            window.addEventListener('load', function () {
             if ($(window).width() >= 768) {
                 $('.re_card_area .re_title a').click(function (e) {
                     e.stopImmediatePropagation();
@@ -769,7 +770,7 @@
             for (var i in subCatContainer)
                 $(subCatContainer[i]).scrollLeft($(this).scrollLeft());
         });
-        $(document).ready(function () {
+        window.addEventListener('load', function () {
             $('.recard_cat_button_sec a').click(function () {
                 $('.recard_cat_button_sec a').removeClass('active');
                 $(this).addClass('active');
@@ -816,15 +817,16 @@
             $('.re_addtocomparebox_btn_hover').click(function (e) {
                 e.stopImmediatePropagation();
             });
-            $('.re_cards_parent>.re_card_box_').each(function () {
+            setTimeout(function(){
+                $('.re_cards_parent>.re_card_box_').each(function () {
                 var oneLineThresh, twoLineThresh;
                 if ($(window).width() < 768) {
                     if ($(this).hasClass('vertical-card')) {
-                        oneLineThresh = 34;
-                        twoLineThresh = 48;
+                        oneLineThresh = 41;
+                        twoLineThresh = 62;
                     } else {
-                        oneLineThresh = 54;
-                        twoLineThresh = 68;
+                        oneLineThresh = 61;
+                        twoLineThresh = 88;
                     }
 
                 } else {
@@ -833,6 +835,7 @@
                 }
                 var titleheight = $(this).find('p').innerHeight();
                 var para = $(this).find('p')[0];
+
                 if (titleheight > oneLineThresh) {
                             var wordArray = para.innerHTML.split(" ");
                             if (titleheight > twoLineThresh) { // if the statement goes till third line
@@ -841,12 +844,22 @@
                                     para.innerHTML = wordArray.join(" ") + ("...");
                                 }
                             }
+                            //setTimeout(function(){dummy(para, titleheight, oneLineThresh, twoLineThresh);});
                             $(this).addClass('twolinetext');
                         }
                 
             });
+            });
 
-
+            function dummy(para, titleheight, oneLineThresh, twoLineThresh){
+                var wordArray = para.innerHTML.split(" ");
+                            if (titleheight > twoLineThresh) { // if the statement goes till third line
+                                while (para.scrollHeight > twoLineThresh) {
+                                    wordArray.pop();
+                                    para.innerHTML = wordArray.join(" ") + ("...");
+                                }
+                            }
+            }
 
             $('.re_filter_title a').click(function () {
                 $('.re_filters_body input[type="checkbox"]:checked').each(function () {
@@ -854,7 +867,7 @@
                 })
             });
 
-        });
+        })
 
         function onSelectCard(card, index) {
             var allCards = document.querySelectorAll('.re_cards_parent .re_card_box_'), row;

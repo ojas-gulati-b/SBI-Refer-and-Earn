@@ -655,6 +655,7 @@ a.re_know_more_btn:after {
 .re_filtersbox {
     position: relative;
     margin-bottom: 20px;
+    padding-right: 20px;
 }
 
 .re_filters_body input[type="checkbox"]+label {
