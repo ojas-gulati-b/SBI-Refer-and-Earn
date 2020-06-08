@@ -887,7 +887,12 @@
             var detailedCard = $('.re_detailcard_open_parent');
             var panelBody = document.querySelector('.re_know_more_details');
             // Set Card Content 
-            var cardHeading = card.querySelector('p').innerHTML;
+            if (card.className.indexOf('twolinetext') !== -1) {
+                var cardHeading = card.querySelector('p').title;
+            } else {
+                var cardHeading = card.querySelector('p').innerHTML;
+            }
+            
             var cardImage = card.querySelector('.re_bgbox').style['background-image'].slice(5, -2);
             detailedCard.find('.opened-card-heading')[0].innerHTML = cardHeading;
             detailedCard.find('.detail-card-image')[0].src = cardImage;
