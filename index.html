@@ -200,8 +200,10 @@
                         <div class="righthover re-desktop"></div>
                         <div class="imagebg"></div>
                     </div>
-                    <p title="IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier">
-                        IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC
+                    <p
+                        title="IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier">
+                        IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier
+                        IRCTC
                         SBI Card Premier IRCTC SBI Card Premier</p>
                     <a href="javascript:;" class="re_addtocomparebox_btn_hover">
                         Apply now
@@ -826,22 +828,24 @@
                     }
 
                 } else {
-                    var oneLineThresh = 58;
-                    var twoLineThresh = 76;
+                    var oneLineThresh = 62;
+                    var twoLineThresh = 84;
                 }
                 var titleheight = $(this).find('p').innerHeight();
                 var para = $(this).find('p')[0];
                 if (titleheight > oneLineThresh) {
-                    var wordArray = para.innerHTML.split(" ");
-                    if (titleheight > twoLineThresh) { // if the statement goes till third line
-                        while (para.scrollHeight > twoLineThresh) {
-                            wordArray.pop();
-                            para.innerHTML = wordArray.join(" ") + ("...");
+                            var wordArray = para.innerHTML.split(" ");
+                            if (titleheight > twoLineThresh) { // if the statement goes till third line
+                                while (para.scrollHeight > twoLineThresh) {
+                                    wordArray.pop();
+                                    para.innerHTML = wordArray.join(" ") + ("...");
+                                }
+                            }
+                            $(this).addClass('twolinetext');
                         }
-                    }
-                    $(this).addClass('twolinetext');
-                }
+                
             });
+
 
 
             $('.re_filter_title a').click(function () {
@@ -916,7 +920,7 @@
                 button.innerHTML = 'Know More';
             } */
 
-            setTimeout(function(){
+            setTimeout(function () {
                 $('.re_fullcomparebox').after(detailedCard);
             }, 1000);
 

@@ -91,6 +91,11 @@
 .re_card_area .re_detailcard_open_parent {
   margin-right: 20px;
 }
+@media screen and (min-width: 1015px) {
+  .re_card_area .re_detailcard_open_parent {
+    margin-right: 24px;
+  }
+}
 @media screen and (min-width: 360px) and (max-width: 389px) {
   .re_card_area .re_title {
     padding-right: 10px;
@@ -123,6 +128,21 @@
 @media screen and (min-width: 320px) and (max-width: 359px) {
   .re_card_area .re_cards_parent {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 389px) {
+  .re_card_area .recard_cat_button_sec {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 787px) {
+  .re_card_area .recard_cat_button_sec {
+    width: calc(100%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .re_card_area .recard_cat_button_sec {
+    width: calc(100% - 20px);
   }
 }
 .re-mobile {
