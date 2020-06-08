@@ -832,7 +832,6 @@
                 var titleheight = $(this).find('p').innerHeight();
                 var para = $(this).find('p')[0];
                 if (titleheight > oneLineThresh) {
-                    $(this).addClass('twolinetext');
                     var wordArray = para.innerHTML.split(" ");
                     if (titleheight > twoLineThresh) { // if the statement goes till third line
                         while (para.scrollHeight > twoLineThresh) {
@@ -840,7 +839,7 @@
                             para.innerHTML = wordArray.join(" ") + ("...");
                         }
                     }
-
+                    $(this).addClass('twolinetext');
                 }
             });
 
