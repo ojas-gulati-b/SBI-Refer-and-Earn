@@ -40,6 +40,11 @@
     max-height: 156px;
   }
 }
+.re_cards_parent .re_detailcard_open_parent .re_opened_card .close-card-img {
+  max-width: 22px;
+  max-height: 22px;
+  width: 100%;
+}
 .re_cards_parent .re_card_box_ {
   margin-right: 20px;
   position: relative;
