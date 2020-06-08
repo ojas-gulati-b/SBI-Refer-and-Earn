@@ -377,6 +377,7 @@
     padding-top: 40px;
     transition: all .2s;
     width: 100%;
+    box-sizing: content-box;
     /* padding-left: 15px;
     padding-right: 15px; */
 }
@@ -1224,6 +1225,7 @@ body.re_comparebox_openes::-webkit-scrollbar {
 .re_cards_parent>div.active .re_addtocomparebox_btn_hover {
     visibility: visible;
     margin-top: 12px;
+    opacity: 1;
 }
 
 .re_cards_parent>div.active .re_bgbox {
