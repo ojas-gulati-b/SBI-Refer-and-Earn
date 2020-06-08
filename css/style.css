@@ -1724,7 +1724,7 @@ div.re_detailcard_open_parent {
     }
     .re_fullcomparebox_footer .re_fullcomparebox_footer_inner a {
         min-width: 100%;
-        height: 57px;
+        height: 77px;
         border-radius: 0;
         margin-right: 0;
     }
@@ -1884,7 +1884,7 @@ div.re_detailcard_open_parent {
     }
     .re_fullcomparebox .re_fullcomparebox_header h3 {
         position: fixed;
-        left: 80px;
+        width: 100%;
     }
     .re_header_cards {
         padding-top: 73px;
