@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/additions.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>Ref Landing</title>
+</head>
+
+<body class="re_body">
+    <div class="re_headerlogo">
+        <div class="re_logo">
+            <img src="images/logo.png">
+        </div>
+    </div>
+    <div class="re_afterheader" id="re_afterheader">
+        <div class="re_refered_parent">
+            <div class="re_inner">
+                <div class="re_txt_ref">
+                    <h5>You’ve been referred by your friend!</h5>
+                    <p>Apply for any SBI Card for exciting benefits and earn bonus points with this referral.</p>
+                </div>
+                <div class="ref_img_ref_parent">
+                    <div class="ref_img_content_img">
+                        <div class="re_img_ref">
+                            <img src="images/sbi-card-collaterals-tokenisation-illustrations-artboard-1-1-1-01-01.png"
+                                alt="">
+                        </div>
+                        <p>You get a gift voucher worth Rs 500 on successfully applying for any SBI Card.</p>
+                    </div>
+
+                    <div class="ref_img_content_img">
+                        <div class="re_img_ref">
+                            <img src="images/sbi-card-collaterals-tokenisation-illustrations-artboard-1-1-1-01-01.png"
+                                alt="">
+                        </div>
+                        <p>Your referral friend will recieve gift voucher worth Rs 500 when you are successfully
+                            onboarded with SBI Card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="re_select_title">
+            Select a card to apply
+        </div>
+        <div class="re_card_area">
+
+            <div class="recard_cat_button_sec">
+                <a href="javascript:;" class="active">
+                    <div>
+                        <img src="images/re_all.svg" alt="">
+                    </div>
+                    <span>All</span>
+                </a>
+                <a href="javascript:;">
+                    <div>
+                        <img src="images/re_travel.svg" alt="">
+                    </div>
+                    <span>Travel</span>
+                </a>
+                <a href="javascript:;">
+                    <div>
+                        <img src="images/re_shopping.svg" alt="">
+                    </div>
+                    <span>Shopping</span>
+                </a>
+                <a href="javascript:;">
+                    <div>
+                        <img src="images/re_lifestyle.png" alt="">
+                    </div>
+                    <span>Lifestyle</span>
+                </a>
+                <a href="javascript:;">
+                    <div>
+                        <img src="images/re_fuel.svg" alt="">
+                    </div>
+                    <span>Fuel</span>
+                </a>
+                <a href="javascript:;">
+                    <div>
+                        <img src="images/re_reward.png" alt="">
+                    </div>
+                    <span>Rewards</span>
+                </a>
+
+
+            </div>
+            <div class="re_filtersbox">
+                <div class="re_title re_no_padding">
+                    <div>
+                        All Cards <span>(22)</span>
+                    </div>
+                    <a href="javascript:;" class="re_w_filter_menu re_filterbtn reward_type">Reward Type</a>
+                    <a href="javascript:;" class="re_w_filter_menu re_filterbtn">Income range</a>
+                    <a href="javascript:;" onclick="togglefiltermenu(this)"
+                        class="re_m_filter_menu re_filterbtn">Filters</a>
+                </div>
+                <!-- Filters -->
+                <div class="re_filters_parent" id="re_filters_parent">
+                    <div class="re_filter_title">
+                        <span>Filters</span>
+                        <a href="javascript:;">Clear All</a>
+                    </div>
+                    <div class="re_filters_header">
+                        <div class="re_btn_reward re_active" onclick="filtertoggle_mobile(this)">Reward Type</div>
+                        <div class="re_btn_income" onclick="filtertoggle_mobile(this)">Income range</div>
+                    </div>
+                    <div class="re_filters_body" id="re_filters_body">
+                        <div class="re_filters_body_reward">
+                            <input type="checkbox" id="re_point">
+                            <label for="re_point"><i></i>Reward Points</label>
+                            <input type="checkbox" id="re_fuel">
+                            <label for="re_fuel"><i></i>Fuel Surcharge Waiver</label>
+                            <input type="checkbox" id="re_lounge">
+                            <label for="re_lounge"><i></i>Lounge Access</label>
+                            <input type="checkbox" id="re_fraud">
+                            <label for="re_fraud"><i></i>Fraud Liability Cover</label>
+                            <input type="checkbox" id="re_Concierge">
+                            <label for="re_Concierge"><i></i>Concierge Service</label>
+                            <input type="checkbox" id="re_Travel">
+                            <label for="re_Travel"><i></i>Travel Benefits</label>
+                        </div>
+                        <div class="re_filters_body_income">
+                            <input type="checkbox" id="re_3_5_Lacs">
+                            <label for="re_3_5_Lacs"><i></i>3-5 Lacs</label>
+                            <input type="checkbox" id="re_5_10_Lacs">
+                            <label for="re_5_10_Lacs"><i></i>5-10 Lacs</label>
+                            <input type="checkbox" id="re_10_15_Lacs">
+                            <label for="re_10_15_Lacs"><i></i>10-15 Lacs</label>
+                            <input type="checkbox" id="re_15_Lacs">
+                            <label for="re_15_Lacs"><i></i>15 Lacs+</label>
+                        </div>
+                    </div>
+                    <div class="re_apply_cancel_sec">
+                        <a href="javascript:;" class="re_apppy_btn" onclick="togglefiltermenu(this)">Apply</a>
+                        <a href="javascript:;" class="re_cancel_btn" onclick="togglefiltermenu(this)">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Selected filter -->
+            <!-- Currently its hidden html is here -->
+            <div class="re_selectedfilters" style="display: none">
+                <div class="re_title_f">Filter</div>
+                <div class="tags_parent">
+                    <div class="re_tags">Fuel Surcharge Waiver <i></i></div>
+                    <div class="re_tags">5-10 Lacs <i></i></div>
+                </div>
+                <div class="re_clearall">Clear all</div>
+            </div>
+            <div class="re_cards_parent">
+                <div class="re_card_box_ vertical-card" onclick="onSelectCard(this, 0)">
+                    <div class="re_bgbox" style="background:url(images/etihad-guest-sbi-premier.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p
+                        title="IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier">
+                        IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier
+                        IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 1)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 2)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 3)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p title="IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier">
+                        IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC SBI Card Premier IRCTC
+                        SBI Card Premier IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 4)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 5)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 6)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 7)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 8)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_ vertical-card" onclick="onSelectCard(this, 9)">
+                    <div class="re_bgbox" style="background:url(images/etihad-guest-sbi-premier.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 10)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 11)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 12)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 13)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 14)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 15)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 16)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 17)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 18)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 19)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 20)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+                <div class="re_card_box_" onclick="onSelectCard(this, 21)">
+                    <div class="re_bgbox" style="background:url(images/re_active_card.png)">
+                        <div class="lefthover re-desktop"></div>
+                        <div class="righthover re-desktop"></div>
+                        <div class="imagebg"></div>
+                    </div>
+                    <p>IRCTC SBI Card Premier</p>
+                    <a href="javascript:;" class="re_addtocomparebox_btn_hover">
+                        Apply now
+                    </a>
+                    <a href="javascript:;" class="re_know_more_btn">Know more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- compare card -->
+    <div class="re_cardadded" id="re_cardadded">
+        <div class="re_cardadded_parent">
+            <div class="re_cardadd_mobile_expand">
+                <img src="images/re_downarrow_grey.svg">
+            </div>
+            <div class="re_add_card_box">
+                <div class="re_cardadded_a">
+                    <img src="images/re_active_card.png">
+                    <i></i>
+                </div>
+                <div class="re_ad_new_bottom" style="display: none">
+                    <i></i> Add Card
+                </div>
+                <div class="re_cardadded_a">
+                    <img src="images/re_active_card.png">
+                    <i></i>
+                </div>
+                <div class="re_ad_new_bottom" style="display: none">
+                    <i></i> Add Card
+                </div>
+                <div class="re_ad_new_bottom">
+                    <i></i> Add Card
+                </div>
+            </div>
+            <div class="re_compbtn">
+                <a href="javascript:;" class="re_btn_cancel" onclick="closecomparebottom(this)">Cancel</a>
+                <a href="javascript:;" class="re_btn_compare" onclick="openfullcompare(this)">Compare</a>
+            </div>
+        </div>
+    </div>
+    <!-- Full comparebox -->
+    <div class="re_fullcomparebox sub-category-container" id="re_fullcomparebox">
+        <div class="re_fullcomparebox_header sub-category-container">
+            <h3>Comparing Cards</h3>
+            <div class="re_header_cards">
+
+                <div class="re_cards_box">
+                    <img src="images/re_active_card.png">
+                    <i></i>
+                    <p>Air India SBI Signature Cards</p>
+                </div>
+                <div class="re_cards_box">
+                    <img src="images/re_active_card.png">
+                    <i></i>
+                    <p>SBI Card Prime</p>
+                </div>
+                <div class="re_cards_box re_add_a_card_header" onclick="closefullcompare(this)">
+                    <img src="images/re_active_card.png">
+                    <div>
+                        <i></i> Add a Card
+                    </div>
+                    <p style="visibility: hidden">SBI Card Prime</p>
+                </div>
+                <div class="re_close_full_compare" id="re_close_full_compare" onclick="closefullcompare(this)"></div>
+            </div>
+        </div>
+        <div class="re_fullcomparebox_body sub-category-container">
+            <div class="re_fullcomparebox_body_row">
+                <div></div>
+                <div>
+                    <p>
+                        <span>Annual Fee:</span>
+                        <span> R 4,999 + Taxes</span>
+                    </p>
+                    <p>
+                        <span>Renewal Fee:</span>
+                        <span> R 4,999 + Taxes</span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <span>Annual Fee:</span>
+                        <span> R 4,999 + Taxes</span>
+                    </p>
+                    <p>
+                        <span>Renewal Fee:</span>
+                        <span> R 4,999 + Taxes</span>
+                    </p>
+                </div>
+            </div>
+            <div class="re_fullcomparebox_body_row">
+                <div>Card Overview</div>
+                <div>
+                    <p>
+                        Enjoy complimentary membership of the Air India Frequent Flyer program-Flying Returns.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Enjoy complimentary membership of the Air India Frequent Flyer program-Flying Returns.
+                    </p>
+                    <p>
+                        Earn upto 30 Reward Points for every Rs. 100 spent on Air India tickets booked through
+                        airindia.com, airindia mobile app.
+                    </p>
+                </div>
+            </div>
+            <div class="re_fullcomparebox_body_row">
+                <div>Complimentary Offers</div>
+                <div>
+                    <p>
+                        Enjoy complimentary membership of the Air India Frequent Flyer program-Flying Returns.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Enjoy complimentary membership of the Air India Frequent Flyer program-Flying Returns.
+                    </p>
+                </div>
+            </div>
+            <div class="re_fullcomparebox_body_row">
+                <div>Card Overview</div>
+                <div>
+                    <p>
+                        Enjoy complimentary membership of the Air India Frequent Flyer program-Flying Returns.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Enjoy complimentary membership of the Air India Frequent Flyer program-Flying Returns.
+                    </p>
+                    <p>
+                        Earn upto 30 Reward Points for every Rs. 100 spent on Air India tickets booked through
+                        airindia.com, airindia mobile app.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="re_fullcomparebox_footer sub-category-container">
+            <div class="re_fullcomparebox_footer_inner">
+                <a href="javascript:;"><span>Apply</span></a>
+                <a href="javascript:;"><span>Apply</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="re_detailcard_open_parent hidden">
+        <div class="re_opened_card">
+            <a href="javascript:;" class="re_close_desc" onclick="closeCardDetails()">
+                <img src="images/card_close.svg" alt="">
+            </a>
+            <img class="detail-card-image" src="images/re_active_card.png">
+            <p class="opened-card-heading">IRCTC SBI Card Premier</p>
+            <div class="re_feesbox">
+                <p>
+                    <span>Annual Fee:</span>
+                    <span>₹ 4,999 + Taxes</span>
+                </p>
+                <p>
+                    <span>Renewal Fee: </span>
+                    <span>₹ 4,999</span>
+                </p>
+            </div>
+            <div class="re_desc">
+                <div>
+                    <img src="images/re_idcard.svg">
+                    <p>Complimentary membership of the Air India Frequent Flyer program-Flying Returns.</p>
+                </div>
+                <div>
+                    <img src="images/re_reward.svg">
+                    <p>Earn upto 30 Reward Points for every Rs. 100 spent on Air India tickets booked through
+                        airindia.com, airindia mobile app.</p>
+                </div>
+                <div>
+                    <img src="images/re_gift_reward.svg">
+                    <p>Enjoy complimentary membership of the Air India Frequent Flyer program-Flying Returns.
+                    </p>
+                </div>
+            </div>
+            <div class="re_referal_offer_txt">
+                <p>Referral Offer</p>
+                <span>You get Rs 500 voucher for using the referral code</span>
+            </div>
+            <a href="javascript:;" class="re_button_apply">Apply now</a>
+            <a href="javascript:;" class="re_button_know">Know More</a>
+            <div class="re_button_compare re_button_compare_add">+ <a href="javascript:;"> Add to
+                    compare</a></div>
+            <div class="re_button_compare re_button_compare_remove" style="display:none;">- <a href="javascript:;">
+                    Remove from compare</a></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        // For opening filter menu
+        function togglefiltermenu(event) {
+            if (window.innerWidth >= 768) {
+                document.querySelectorAll('.re_filterbtn').forEach(function (item) {
+                    item.classList.remove('re_filterbtn_open');
+                });
+                event.classList.toggle('re_filterbtn_open');
+                document.querySelector('#re_filters_parent').classList.remove('re_filters_parent_open');
+                if (event.innerText == "Reward Type") {
+                    document.querySelector('#re_filters_parent').classList.toggle('re_filters_parent_open');
+                    document.querySelector('#re_filters_body').classList.remove('income_type_open');
+                    document.querySelector('#re_filters_body').classList.add('reward_type_open');
+                } else {
+                    document.querySelector('#re_filters_parent').classList.toggle('re_filters_parent_open');
+                    document.querySelector('#re_filters_body').classList.remove('reward_type_open');
+                    document.querySelector('#re_filters_body').classList.add('income_type_open')
+                }
+            } else if (window.innerWidth <= 767) {
+                event.classList.toggle('re_filterbtn_open');
+                document.querySelector('#re_filters_parent').classList.toggle('re_filters_parent_open');
+                document.getElementsByClassName("re_headerlogo")[0].classList.toggle('header_filter_open');
+            }
+        }
+        // filter toggle on mobile
+        function filtertoggle_mobile(event) {
+            if (window.innerWidth <= 767) {
+                document.querySelectorAll('.re_filters_header > div').forEach(function (item) {
+                    item.classList.remove('re_active');
+                });
+                event.classList.add('re_active');
+                if (event.innerText == "Reward Type") {
+                    document.querySelector('#re_filters_body').classList.remove('income_type_open');
+                    document.querySelector('#re_filters_body').classList.add('reward_type_open');
+                } else {
+                    document.querySelector('#re_filters_body').classList.remove('reward_type_open');
+                    document.querySelector('#re_filters_body').classList.add('income_type_open')
+                }
+            }
+        }
+
+
+        function closecomparebottom(event) {
+            document.querySelector('#re_cardadded').classList.remove('re_cardadded_open');
+            $('.re_cards_parent').removeAttr('style');
+        }
+        // For opening full compare box
+        function openfullcompare(event) {
+
+
+            document.querySelector('#re_fullcomparebox').classList.add('re_fullcomparebox_open');
+            document.getElementsByTagName('body')[0].classList.add('re_comparebox_openes');
+            window.scrollTo({
+                top: 0
+            });
+            $('.re_close_full_compare').show();
+
+        }
+        // for on scrolling to make height small
+        window.addEventListener('scroll', function (e) {
+            var scrolltop = window.scrollY;
+            if (scrolltop > 50) {
+                document.querySelector('#re_fullcomparebox').classList.add('re_fullcomparebox_scroll');
+
+            } else {
+                document.querySelector('#re_fullcomparebox').classList.remove('re_fullcomparebox_scroll');
+
+            }
+        });
+        // for closing comparepop
+        function closefullcompare(event) {
+            document.querySelector('#re_fullcomparebox').classList.remove('re_fullcomparebox_open');
+            document.getElementsByTagName('body')[0].classList.remove('re_comparebox_openes');
+            window.scrollTo({
+                top: 0
+            });
+            document.querySelector('#re_fullcomparebox').classList.remove('re_fullcomparebox_scroll');
+            $('.re_close_full_compare').hide();
+        }
+        $(document).ready(function () {
+            if ($(window).width() >= 768) {
+                $('.re_card_area .re_title a').click(function (e) {
+                    e.stopImmediatePropagation();
+                    var currenttext = $(this).text();
+                    $('#re_filters_parent').show();
+                    $('.re_card_area .re_title a').removeClass('re_filterbtn_open');
+                    $(this).toggleClass('re_filterbtn_open');
+                    if (currenttext == 'Reward Type') {
+                        $('.re_filters_body_income').hide();
+                        $('.re_filters_body_reward').show();
+                        $('#re_filters_parent').css('right', '171px');
+                    } else {
+                        $('.re_filters_body_reward').hide();
+                        $('.re_filters_body_income').show();
+                        $('#re_filters_parent').css('right', '0');
+                    }
+                });
+                $(window).click(function () {
+                    $('#re_filters_parent').hide();
+                    $('.re_card_area .re_title a').removeClass('re_filterbtn_open');
+                });
+            }
+            $('.re_filters_body').change(function () {
+                $('.re_selectedfilters').show();
+                if ($('input[type="checkbox"]:checked').length > 0) {
+                    $('.re_apppy_btn').css('background', '#00b1f2')
+                } else {
+                    $('.re_apppy_btn').css('background', '#dadada')
+                }
+            });
+            $('.re_clearall').click(function () {
+                $('.re_selectedfilters').hide();
+            });
+            // // $('.re_cards_parent > div.re_card_box_').click(function (e) {
+            // //     e.stopImmediatePropagation();
+            // //     $('.re_cards_parent>div').removeClass('active');
+            // //     $(this).addClass('active');
+            // //     $('.re_detailcard_open_parent').removeAttr('style');
+            // //     $(this).next().css({
+            // //         'max-height': '1368px',
+            // //     });
+            // });
+            // $('.re_detailcard_open_parent .re_opened_card .re_close_desc').click(function (e) {
+            //     // debugger;
+            //     e.stopImmediatePropagation();
+            //     $(this).parent().parent().removeAttr('style');
+            //     $('.re_cards_parent>div').removeClass('active');
+            // });
+            $('.re_cardadd_mobile_expand').click(function () {
+                $(this).toggleClass('open');
+                $('#re_cardadded').toggleClass('re_cardadded_open_full')
+            });
+        });
+        // compare card left right swipe
+        var subCatContainer = document.getElementsByClassName("sub-category-container");
+
+        $(".sub-category-container").scroll(function () {
+            for (var i in subCatContainer)
+                $(subCatContainer[i]).scrollLeft($(this).scrollLeft());
+        });
+        $(document).ready(function () {
+            $('.recard_cat_button_sec a').click(function () {
+                $('.recard_cat_button_sec a').removeClass('active');
+                $(this).addClass('active');
+            });
+            $('#re_filters_parent').click(function (e) {
+                e.stopImmediatePropagation();
+            });
+            // For opening compare box
+            function opencomparebottom(event) {
+                document.querySelector('#re_cardadded').classList.add('re_cardadded_open');
+                $('.re_cards_parent').css('padding-bottom', '130px');
+            }
+            $('.re_button_compare_add').click(function (e) {
+                e.stopImmediatePropagation();
+                $('#re_cardadded').addClass('re_cardadded_open');
+                $('.re_cards_parent').css('padding-bottom', '130px');
+                $(this).next().show();
+                $(this).hide();
+            });
+            $('.re_button_compare_remove').click(function (e) {
+                e.stopImmediatePropagation();
+                $(this).prev().show();
+                $(this).hide();
+            });
+            $('.re_cards_parent>div.re_opened_card a.re_button_apply').click(function (e) {
+
+                e.stopImmediatePropagation();
+            });
+            $('.re_cards_parent>div.re_opened_card a.re_button_know').click(function (e) {
+
+                e.stopImmediatePropagation();
+            });
+            $('.re_cardadded_a i').click(function () {
+                $(this).parent().next().show();
+                $(this).parent().hide();
+                if ($('.re_cardadded_a[style="display: none;"]').length == 2) {
+                    $('#re_cardadded').removeClass('re_cardadded_open');
+                    $('.re_cards_parent').css('padding-bottom', '40px');
+                    $('.re_opened_card[style="display: flex;"] .re_button_compare_add').show();
+                    $('.re_opened_card[style="display: flex;"] .re_button_compare_remove').hide();
+
+                }
+            });
+            $('.re_addtocomparebox_btn_hover').click(function (e) {
+                e.stopImmediatePropagation();
+            });
+            $('.re_cards_parent>.re_card_box_').each(function () {
+                var oneLineThresh, twoLineThresh;
+                if ($(window).width() < 768) {
+                    if ($(this).hasClass('vertical-card')) {
+                        oneLineThresh = 34;
+                        twoLineThresh = 48;
+                    } else {
+                        oneLineThresh = 54;
+                        twoLineThresh = 68;
+                    }
+
+                } else {
+                    var oneLineThresh = 58;
+                    var twoLineThresh = 76;
+                }
+                var titleheight = $(this).find('p').innerHeight();
+                var para = $(this).find('p')[0];
+                if (titleheight > oneLineThresh) {
+                    $(this).addClass('twolinetext');
+                    var wordArray = para.innerHTML.split(" ");
+                    if (titleheight > twoLineThresh) { // if the statement goes till third line
+                        while (para.scrollHeight > twoLineThresh) {
+                            wordArray.pop();
+                            para.innerHTML = wordArray.join(" ") + ("...");
+                        }
+                    }
+
+                }
+            });
+
+
+            $('.re_filter_title a').click(function () {
+                $('.re_filters_body input[type="checkbox"]:checked').each(function () {
+                    $(this).prop('checked', false);
+                })
+            });
+
+        });
+
+        function onSelectCard(card, index) {
+            var allCards = document.querySelectorAll('.re_cards_parent .re_card_box_'), row;
+            for (var i = 0; i < allCards.length; i++) {
+                allCards[i].classList.remove('active');
+            }
+            card.classList.add('active');
+            if (window.innerWidth > 767 && window.innerWidth <= 1015) {
+                row = Math.floor(index / 2) + 1, posToAdd = row * 2 - 1;
+            }
+            else if (window.innerWidth > 1015) {
+                row = Math.floor(index / 3) + 1, posToAdd = row * 3 - 1;
+            }
+            else if (window.innerWidth > 759 && window.innerWidth <= 767) {
+                row = Math.floor(index / 4) + 1, posToAdd = row * 4 - 1;
+            }
+            else if (window.innerWidth > 574 && window.innerWidth <= 759) {
+                row = Math.floor(index / 3) + 1, posToAdd = row * 3 - 1;
+            }
+            else if (window.innerWidth > 359 && window.innerWidth <= 574) {
+                row = Math.floor(index / 2) + 1, posToAdd = row * 2 - 1;
+            } else {
+                row = Math.floor(index / 1) + 1, posToAdd = row * 1 - 1;
+            }
+            if (posToAdd > allCards.length - 1) posToAdd = allCards.length - 1;
+            openCardDetails(card, posToAdd);
+        }
+
+        function openCardDetails(card, index) {
+            var detailedCard = $('.re_detailcard_open_parent');
+            var panelBody = document.querySelector('.re_know_more_details');
+            // Set Card Content 
+            var cardHeading = card.querySelector('p').innerHTML;
+            var cardImage = card.querySelector('.re_bgbox').style['background-image'].slice(5, -2);
+            detailedCard.find('.opened-card-heading')[0].innerHTML = cardHeading;
+            detailedCard.find('.detail-card-image')[0].src = cardImage;
+            if (card.className.indexOf('vertical-card') !== -1) {
+                detailedCard.find('.detail-card-image')[0].classList.add('vertical-card');
+            } else {
+                detailedCard.find('.detail-card-image')[0].classList.remove('vertical-card');
+            }
+            // Open Card
+            $('.re_cards_parent .re_card_box_').eq(index).after(detailedCard);
+            detailedCard.removeClass('hidden');
+            setTimeout(function () {
+                getElement('.re_detailcard_open_parent').style.maxHeight = getElement('.re_detailcard_open_parent').scrollHeight + 100 + "px";
+            });
+
+
+        }
+
+        function closeCardDetails() {
+            var detailedCard = $('.re_detailcard_open_parent');
+            var button = document.querySelector('.re_button_know'), panelBody = document.querySelector('.re_know_more_details');
+            detailedCard.addClass('hidden');
+            if (getElement('.re_detailcard_open_parent').style.maxHeight) {
+                getElement('.re_detailcard_open_parent').style.maxHeight = null;
+            }
+            // Collapse Know More if opened
+            /* if (button.innerHTML === 'Know Less') {
+                panelBody.classList.remove('expanded');
+                panelBody.style.maxHeight = null;
+                button.innerHTML = 'Know More';
+            } */
+
+            setTimeout(() => {
+                $('.re_fullcomparebox').after(detailedCard);
+            }, 1000);
+
+            // Remove active class from the cards
+            var allCards = document.querySelectorAll('.re_cards_parent .re_card_box_');
+            for (var i = 0; i < allCards.length; i++) {
+                allCards[i].classList.remove('active');
+            }
+
+        }
+        function getElement(selector) {
+            return document.querySelector(selector);
+        }
+    </script>
+</body>
+
+</html>
